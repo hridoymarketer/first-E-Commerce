@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: antiquewhite;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+}
+.container a{
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 700px;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+}
+.searchbox{
+    position: fixed;
+    top: 50px;
+    right: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10% 10% 10% 10%/ 50% 50% 50% 50%;
+    border: 1px solid #fff;
+    width: 170px;
+    height: 45px;
+}
+.searchbox input{
+    border: none;
+    outline: none;
+    width: 90px;
+    height: 40px;
+    letter-spacing: 4px;
+    background-color: transparent;
+    padding: 0px 20px;
+    
+}
+.searchbox input::placeholder{
+    color: black;
+    font-size: 0.8rem;
+    font-family: popinse;
+    font-weight: 400;
+}
+.container .section1{
+    position: absolute;
+    left: 12%;
+    top: 40%;
+    transform: translate(-15, -50%);
+}
+.section1 img{
+    width: 300px;
+}
+.header{
+    position: absolute;
+    top: 50%;
+    right: 12%;
+    
+}
+.header span{
+    color: rgb(5, 5, 142);
+}
+.header h1{
+    letter-spacing: 6px;
+    font-size: 70px;
+    font-weight: bold;
+}
+.header h2{
+    font-weight: bold;
+    font-size: 50px;
+}
+.header .btn{
+    width: 170px;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 10% 10% 10% 10%/ 50% 50% 50% 50%;
+    cursor: pointer;
+    padding: 0px 20px;
+    background-color: blue;
+    color: #fff;
+    font-weight: bold;
+    font-size: 500;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.header .btn:hover{
+    background-color: rgb(118, 10, 10);
+    color: rgb(247, 247, 241);
+}
+.iconaria{
+    position: fixed;
+    top: 50%;
+    left: 1%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 2px 2px 30px rgb(125, 119, 119);
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #fff;
+
+}
+.iconaria i{
+    padding: 20px 0px;
+    font-size: 2rem;
+    background-color: #fff;
+}
+.section2{
+    width: 85%;
+    background-color: #fff;
+    display: flex;
+    margin: 30px auto;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 60px;
+    padding: 40px 20px;
+    background-size: 1000px;
+    border-radius: 10px;
+    
+}
+.section2 >h3{
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgb(116, 108, 108);
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    background-color: aliceblue;
+    
+}
+span{
+    color: rgb(16, 16, 233);
+    
+}
+.product{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.productbox{
+    width: 250px;
+    height: 330px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 8px;
+    margin: 10px 30px;
+    background-color: #fff;
+}
+.productbox img{
+    height: 180px;
+    background-color: #dac9c9;
+}
+.productbox a{
+    text-decoration: none;
+    background-color: aliceblue;
+    color: #2c2c2c;
+}
+.productbox p{
+    background-color: #fff;
+    color: #4d4d4d70;
+    font-size: 0.9rem;
+}
+.buybtn{
+    position: absolute;
+    width: 140px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     bottom: -20px;
+     left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15% 15% 15% 15%/50% 50% 50% 50%;
+    background: linear-gradient(#6b60ec 20%, #a166f4);
+    color: #fff;
+    display: none;
+    animation: fade 0.2s;
+    
+
+}
+.productbox:hover .buybtn{
+    display: flex;
+}
+.productbox:hover{
+    box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+.productbox:hover a:last-child{
+    color: #fff;
+    transition: all ease 0.3s;
+}
+.about{
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px auto;
+    padding: 30px;
+    margin-bottom: 150px !important;
+}
+.aboutbox{
+    width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.img99>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.aboutbox h1{
+    font-size: 3rem;
+    font-weight: 700;
+    font-family:Arial, Helvetica, sans-serif;
+    color: rgb(247, 13, 13);
+}
+.aboutbox h4{
+    font-weight: 300;
+    font-size: 2rem;
+    font-family: fantasy;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.aboutbox p{
+    font-size: 1rem;
+    color: #bdbdbd;
+    letter-spacing: 0.5px;
+}
+.notification{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.notification h3{
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 10px;
+}
+.notificationinput{
+    width: 500px;
+    height: 60px;
+    border-radius: 7% 7% 7% 7%/50% 50% 50% 50%;
+    background-color: #fff;
+    box-shadow: 2px 5px 30px #f2f2f2;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ 
+}
+.notificationinput input{
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    background: transparent;
+}
+.notificationbutton{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px #060606;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #f7f5fc;
+    color: rgb(0, 0, 0);
+}
+.notificationbutton:hover{
+    color: rgb(255, 251, 251);
+    background-color: #1e1c3b;
+}
+footer{
+    width: 100%;
+    height: 30%;
+    margin-bottom: 0px;
+}
+footer p{
+    text-align: center;
+    background-color: black;
+    color: #f2f2f2;
+}
+
+
+
+
+
+
+
+
